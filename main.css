@@ -22,6 +22,7 @@ body {
     text-decoration: none;
     font-size: 17px;
     display: block;
+    text-align: left;
   }
   
   /* Style the hamburger menu */
@@ -89,9 +90,10 @@ body {
     border-color: hotpink;
 }
 
-.btn-info :hover{
-    background-color: yellow;
-    border-color: yellow;
+.button .btn-info a:hover {
+    background-color:white;
+    color: hotpink;
+    border-color:white;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -115,6 +117,7 @@ background-image: url(https://images.unsplash.com/photo-1484807352052-23338990c6
 
 .card-deck{
     color: black;
+    padding: 80px;
 }
 
 /* Padding for spacing */
@@ -186,7 +189,7 @@ background-image: url(https://images.unsplash.com/photo-1484807352052-23338990c6
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 700px;
+    width: 100%;
   }
 }
 
