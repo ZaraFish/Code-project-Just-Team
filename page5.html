@@ -6,28 +6,48 @@
     <meta name="author" author="Just-team">
     <meta name="content" content="Find out more about what talents you can develop during lockdown!">
     <link href="https://fonts.googleapis.com/css2?    family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./main.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <header>
-        <nav>
-            <li><a href="./index.html">About</a></li>
-            <li><a href="./page2.html">Benefits</a></li>
-            <li><a href="./page3.html">Courses</a></li>
-            <li><a href="./page4.html">Testimonials</a></li>
-            <li><a href="./page5.html">Contact</a></li>
-            <li><a href="./page6.html">Download</a></li>
+        <script src="./myscript.js"></script>
+        <!-- Hamburger menu Code -->
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        </nav>
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+          <a href="#home" class="active">Code First Girls</a>
+          <!-- Navigation links (hidden by default) -->
+          <div id="myLinks">
+            <a href="./index.html">About</a>
+                    <a href="./page2.html">Benefits</a>
+                    <a href="./page3.html">Courses</a>
+                    <a href="./page4.html">Testimonials</a>
+                    <a href="./page5.html">Contact</a>
+                    <a href="./page6.html">Download</a>
+          </div>
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <!-- End of Hamburger menu Code -->
     </header>
 
     <!--This is the contact page-->
   
   <body>
     
-    <h2>Get in Touch</h2>
-
-    <p>If you are interested in learning during a pandemic, send us an email.</p>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Get in Touch</h1>
+          <p class="lead">If you are interested in learning during a pandemic, send us an email</p>  
+        </div>
+      </div>
+    
 
     <form action="learning@gnmail.com"> <!-- I don't know what action to set this to?-->
         <input type="text" value="message" placeholder="Message">
@@ -42,8 +62,7 @@
 
   <footer>
       <p>1717 Harrison St, San Francisco, CA 94103, USA </p>
-      
-      <p><img src="copyright.jpg" alt="copyright symbol">LearningDuringAPandemic</p>
-  </footer>
+      <i class="fa fa-copyright"> LearningDuringAPandemic</i>
+    </footer>
 
 </html>
